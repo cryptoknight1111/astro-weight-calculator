@@ -34,7 +34,7 @@ const planets = [
 
     const planetMap = Object.fromEntries(planets);
     
-    reversePlanets.forEach(([name, multiplier]) => {
+    reversePlanets.forEach(([name]) => {
         const opt = document.createElement('option');
         opt.textContent = name;
         opt.value = name;
@@ -45,7 +45,6 @@ function calculateWeight(weight, multiplier) {
     // 2. Write the code to return the correct weight 
 
 } 
-const IS_TEST = location.port === '8888'; // the test serves at http://localhost:8888
 
 function handleClickEvent(e) {
     if (isTyping) return;
