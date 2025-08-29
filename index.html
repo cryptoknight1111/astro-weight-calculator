@@ -3,14 +3,13 @@
 <head>
   <link rel="stylesheet" href="mystyle.css">
   <meta charset="utf-8">
-  <meta name="viewport" content="'width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Astro Weight Calculator</title>
   
 </head>
 
 <body>
   <div class="my-element">
-    I’ll resize my margin!
   </div>
 
   <audio autoplay  loop  id="myAudio">
@@ -41,12 +40,19 @@
     </svg>
   </div>
   <!-- Write your markup here  -->
-   <div id="user-planet">
-   <input id="user-weight" type="text" placeholder="Weight (lbs)" /> 
-   <select id="planets">
-  </select>
+
+
+  <div id="user-planet">
+    <input id="user-weight" type="text" placeholder="Weight (lbs)" /> 
+    <select id="planets"> </select>
+    <div id="check">
+      <input type="checkbox" id="plutoNotPlanet" name="planetStatus" value="not-planet">
+      <label for="plutoNotPlanet" id="plutoLabel">Pluto is not a planet</label>
+    </div>
   </div>
 
+
+  
   <div id="button">
    <button id="calculate-button" >Calculate</button>
   </div>
