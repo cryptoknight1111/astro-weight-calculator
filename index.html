@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <link rel="stylesheet" href="mystyle.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="'width=device-width, initial-scale=1.0">
+  <title>Astro Weight Calculator</title>
+  
+</head>
+
+<body>
+  <div class="my-element">
+    I’ll resize my margin!
+  </div>
+
+  <audio autoplay  loop  id="myAudio">
+    <source src="Background sound.mp3" type="audio/mpeg">
+  </audio>
+  
+  <button id="mute-btn">
+  <span id="mute-icon" aria-hidden="true"><i class="fas fa-volume-mute"></i>&#128263;</span>
+  <span id="unmute-icon" class="hidden" aria-hidden="true"><i class="fas fa-volume-up"></i>&#128264;</span> 
+  </button>
+  <video autoplay muted loop playsinline id="myVideo" class="video-background-container ">
+    <source src="earthloop.mp4" type="video/mp4">
+  </video>
+  <div class="interstellar-hero" aria-hidden="true">
+    <svg viewBox="0 0 1000 300" aria-labelledby="interstellar-title" role="img">
+      <title id="interstellar-title">Interstellar animated title</title>
+  
+      <symbol id="s-text">
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em">Astro Weight Calculator</text>
+      </symbol>
+  
+      <!-- 5 layered strokes -->
+      <use class="text" xlink:href="#s-text" href="#s-text"></use>
+      <use class="text" xlink:href="#s-text" href="#s-text"></use>
+      <use class="text" xlink:href="#s-text" href="#s-text"></use>
+      <use class="text" xlink:href="#s-text" href="#s-text"></use>
+      <use class="text" xlink:href="#s-text" href="#s-text"></use>
+    </svg>
+  </div>
+  <!-- Write your markup here  -->
+   <div id="user-planet">
+   <input id="user-weight" type="text" placeholder="Weight (lbs)" /> 
+   <select id="planets">
+  </select>
+  </div>
+
+  <div id="button">
+   <button id="calculate-button" >Calculate</button>
+  </div>
+
+  <div class="night">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+
+  <div class="text">
+    <p id="output"></p>
+  </div>
+
+<script src="main.js" charset="utf-8"></script>
+<script src="mute.js" charset="utf-8"></script>
+</body>
+
+</html>
