@@ -56,11 +56,7 @@ function handleClickEvent(e) {
     let message = `If you were on ${planetName}, you would weigh ${result.toFixed(2)}lbs!`
     typeText(output, message, 25);
 
-    if (IS_TEST) {
-        output.textContent = message;      // immediate for tests
-      } else {
-        typeText(output, message, 25);     // typewriter for normal use
-      }
+
 }
 calcButton.addEventListener('click', handleClickEvent);
 
